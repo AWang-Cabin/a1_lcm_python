@@ -1,0 +1,4 @@
+struct aroundfeet_map_t
+{
+    float aroundfeet_map[36];
+}

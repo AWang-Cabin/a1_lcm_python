@@ -1,0 +1,4 @@
+struct heightmap_t
+{
+    float heightmap[100][100];
+}

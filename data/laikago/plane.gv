@@ -1,0 +1,53 @@
+digraph G {
+node [shape=box];
+"chassis" [label="chassis"];
+"FL_hip_motor" [label="FL_hip_motor"];
+"FL_upper_leg" [label="FL_upper_leg"];
+"FL_lower_leg" [label="FL_lower_leg"];
+"toeFL" [label="toeFL"];
+"FR_hip_motor" [label="FR_hip_motor"];
+"FR_upper_leg" [label="FR_upper_leg"];
+"FR_lower_leg" [label="FR_lower_leg"];
+"toeFR" [label="toeFR"];
+"RL_hip_motor" [label="RL_hip_motor"];
+"RL_upper_leg" [label="RL_upper_leg"];
+"RL_lower_leg" [label="RL_lower_leg"];
+"toeRL" [label="toeRL"];
+"RR_hip_motor" [label="RR_hip_motor"];
+"RR_upper_leg" [label="RR_upper_leg"];
+"RR_lower_leg" [label="RR_lower_leg"];
+"toeRR" [label="toeRR"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"chassis" -> "FL_hip_motor_2_chassis_joint" [label="xyz: 0.0817145 0 0.242889 \nrpy: 0 -0 0"]
+"FL_hip_motor_2_chassis_joint" -> "FL_hip_motor"
+"FL_hip_motor" -> "FL_upper_leg_2_hip_motor_joint" [label="xyz: 0.055855 0 0 \nrpy: 0 -0 0"]
+"FL_upper_leg_2_hip_motor_joint" -> "FL_upper_leg"
+"FL_upper_leg" -> "FL_lower_leg_2_upper_leg_joint" [label="xyz: -0.02069 -0.20833 -0.1422 \nrpy: 0 -0 0"]
+"FL_lower_leg_2_upper_leg_joint" -> "FL_lower_leg"
+"FL_lower_leg" -> "jtoeFL" [label="xyz: 0 -0.25 -0.022 \nrpy: 0 -0 0"]
+"jtoeFL" -> "toeFL"
+"chassis" -> "FR_hip_motor_2_chassis_joint" [label="xyz: -0.0817145 0 0.242889 \nrpy: 0 -0 0"]
+"FR_hip_motor_2_chassis_joint" -> "FR_hip_motor"
+"FR_hip_motor" -> "FR_upper_leg_2_hip_motor_joint" [label="xyz: -0.053565 0 0 \nrpy: 0 -0 0"]
+"FR_upper_leg_2_hip_motor_joint" -> "FR_upper_leg"
+"FR_upper_leg" -> "FR_lower_leg_2_upper_leg_joint" [label="xyz: 0.02069 -0.20833 -0.1422 \nrpy: 0 -0 0"]
+"FR_lower_leg_2_upper_leg_joint" -> "FR_lower_leg"
+"FR_lower_leg" -> "jtoeFR" [label="xyz: 0 -0.25 -0.022 \nrpy: 0 -0 0"]
+"jtoeFR" -> "toeFR"
+"chassis" -> "RL_hip_motor_2_chassis_joint" [label="xyz: 0.0817145 0 -0.194401 \nrpy: 0 -0 0"]
+"RL_hip_motor_2_chassis_joint" -> "RL_hip_motor"
+"RL_hip_motor" -> "RL_upper_leg_2_hip_motor_joint" [label="xyz: 0.055855 0 0 \nrpy: 0 -0 0"]
+"RL_upper_leg_2_hip_motor_joint" -> "RL_upper_leg"
+"RL_upper_leg" -> "RL_lower_leg_2_upper_leg_joint" [label="xyz: -0.02069 -0.20833 -0.1422 \nrpy: 0 -0 0"]
+"RL_lower_leg_2_upper_leg_joint" -> "RL_lower_leg"
+"RL_lower_leg" -> "jtoeRL" [label="xyz: 0 -0.25 -0.022 \nrpy: 0 -0 0"]
+"jtoeRL" -> "toeRL"
+"chassis" -> "RR_hip_motor_2_chassis_joint" [label="xyz: -0.0817145 0 -0.194401 \nrpy: 0 -0 0"]
+"RR_hip_motor_2_chassis_joint" -> "RR_hip_motor"
+"RR_hip_motor" -> "RR_upper_leg_2_hip_motor_joint" [label="xyz: -0.053565 0 0 \nrpy: 0 -0 0"]
+"RR_upper_leg_2_hip_motor_joint" -> "RR_upper_leg"
+"RR_upper_leg" -> "RR_lower_leg_2_upper_leg_joint" [label="xyz: 0.02069 -0.20833 -0.1422 \nrpy: 0 -0 0"]
+"RR_lower_leg_2_upper_leg_joint" -> "RR_lower_leg"
+"RR_lower_leg" -> "jtoeRR" [label="xyz: 0 -0.25 -0.022 \nrpy: 0 -0 0"]
+"jtoeRR" -> "toeRR"
+}

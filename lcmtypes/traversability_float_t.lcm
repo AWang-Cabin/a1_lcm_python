@@ -1,0 +1,6 @@
+package exlcm;
+
+struct traversability_float_t
+{
+    float map[100][100];
+}

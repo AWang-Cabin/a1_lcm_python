@@ -1,0 +1,7 @@
+struct multilayer_map_t
+{
+    int32_t layers;
+    int32_t x_size;
+    int32_t y_size;
+    float multimap[layers][x_size][y_size];
+}
